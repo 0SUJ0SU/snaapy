@@ -1,0 +1,52 @@
+/* CSS Filter Presets for Snaapy */
+
+.filter-none { filter: none; }
+
+.filter-warm {
+  filter: sepia(0.2) saturate(1.2) contrast(1.1);
+}
+
+.filter-cool {
+  filter: hue-rotate(180deg) saturate(0.8) contrast(1.1);
+}
+
+.filter-bw {
+  filter: grayscale(1) contrast(1.2);
+}
+
+.filter-vintage {
+  filter: sepia(0.5) contrast(0.9) brightness(1.1);
+}
+
+.filter-fade {
+  filter: brightness(1.1) contrast(0.8) saturate(0.9);
+}
+
+.filter-dramatic {
+  filter: contrast(1.5) brightness(0.8) saturate(1.2);
+}
+
+.filter-mono {
+  filter: grayscale(1) brightness(1.2) contrast(0.8);
+}
+
+/* Effects */
+.effect-mirror {
+  transform: scaleX(-1);
+}
+
+.effect-fisheye {
+  /* Requires specialized implementation, placeholder for now */
+}
+
+.effect-vignette {
+  position: relative;
+}
+
+.effect-vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+}

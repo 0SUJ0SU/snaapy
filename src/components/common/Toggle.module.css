@@ -1,0 +1,25 @@
+.toggle {
+  width: 50px;
+  height: 28px;
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+.toggle[data-ison="true"] {
+  justify-content: flex-end;
+  background-color: var(--text-primary);
+}
+
+.handle {
+  width: 22px;
+  height: 22px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
